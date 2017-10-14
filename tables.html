@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap POC - Tables</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+	<h2>Proof of concept for Bootstrap tables</h2>
+	<div class="table-responsive">
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<th>Ticket Id</th>
+					<th>Type</th>
+					<th>Priority</th>
+					<th>Name</th>
+					<th>Status</th>
+					<th>Created</th>
+			</thead>
+			<tbody>
+				<tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope danger">
+				  <td class="ng-binding">1</td>
+				  <td><a href="/deliverable/#!/tickets/1" class="ng-binding">Bug</a></td>
+				  <td class="ng-binding">Critical</td>
+				  <td class="ng-binding">blah</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">1/27/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">10</td>
+				  <td><a href="/deliverable/#!/tickets/10" class="ng-binding">Feature</a></td>
+				  <td class="ng-binding">High</td>
+				  <td class="ng-binding">TEST18TEST</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">6/21/2017</td>
+			  </tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope danger">
+				  <td class="ng-binding">2</td>
+				  <td><a href="/deliverable/#!/tickets/2" class="ng-binding">Bug</a></td>
+				  <td class="ng-binding">Critical</td>
+				  <td class="ng-binding">Return better json error messages in TicketRESTController</td>
+				  <td class="ng-binding">In QA</td>
+				  <td class="ng-binding">6/21/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">22</td>
+				  <td><a href="/deliverable/#!/tickets/22" class="ng-binding">Feature</a></td>
+				  <td class="ng-binding">High</td>
+				  <td class="ng-binding">Improve login feature</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">8/2/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">5</td>
+				  <td><a href="/deliverable/#!/tickets/5" class="ng-binding">Bug</a></td>
+				  <td class="ng-binding">Medium</td>
+				  <td class="ng-binding">t5</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">6/21/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">9</td>
+				  <td><a href="/deliverable/#!/tickets/9" class="ng-binding">Bug</a></td>
+				  <td class="ng-binding">Medium</td>
+				  <td class="ng-binding">Update schema.sql</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">6/21/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">19</td>
+				  <td><a href="/deliverable/#!/tickets/19" class="ng-binding">Bug</a></td>
+				  <td class="ng-binding">Medium</td>
+				  <td class="ng-binding">fix broken stuff</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">8/2/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">20</td>
+				  <td><a href="/deliverable/#!/tickets/20" class="ng-binding">Feature</a></td>
+				  <td class="ng-binding">Medium</td>
+				  <td class="ng-binding">Add async stuff</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">8/2/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">23</td>
+				  <td><a href="/deliverable/#!/tickets/23" class="ng-binding">Feature</a></td>
+				  <td class="ng-binding">Medium</td>
+				  <td class="ng-binding">Add some logging</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">8/2/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">17</td>
+				  <td><a href="/deliverable/#!/tickets/17" class="ng-binding">Feature</a></td>
+				  <td class="ng-binding">Low</td>
+				  <td class="ng-binding">Ticket17</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">12/26/2016</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">4</td>
+				  <td><a href="/deliverable/#!/tickets/4" class="ng-binding">Bug</a></td>
+				  <td class="ng-binding">Low</td>
+				  <td class="ng-binding">TEST6TEST</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">6/21/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">8</td>
+				  <td><a href="/deliverable/#!/tickets/8" class="ng-binding">Bug</a></td>
+				  <td class="ng-binding">Low</td>
+				  <td class="ng-binding">TEST14TEST</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">6/21/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">16</td>
+				  <td><a href="/deliverable/#!/tickets/16" class="ng-binding">Feature</a></td>
+				  <td class="ng-binding">Low</td>
+				  <td class="ng-binding">TEST30TEST</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">6/21/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">11</td>
+				  <td><a href="/deliverable/#!/tickets/11" class="ng-binding">Feature</a></td>
+				  <td class="ng-binding">Low</td>
+				  <td class="ng-binding">TEST20TEST</td>
+				  <td class="ng-binding">In Analysis</td>
+				  <td class="ng-binding">6/21/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">15</td>
+				  <td><a href="/deliverable/#!/tickets/15" class="ng-binding">Feature</a></td>
+				  <td class="ng-binding">Low</td>
+				  <td class="ng-binding">TEST28TEST</td>
+				  <td class="ng-binding">In Analysis</td>
+				  <td class="ng-binding">6/21/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">6</td>
+				  <td><a href="/deliverable/#!/tickets/6" class="ng-binding">Bug</a></td>
+				  <td class="ng-binding">Low</td>
+				  <td class="ng-binding">new test10test</td>
+				  <td class="ng-binding">In Development</td>
+				  <td class="ng-binding">6/21/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">21</td>
+				  <td><a href="/deliverable/#!/tickets/21" class="ng-binding">Bug</a></td>
+				  <td class="ng-binding">Low</td>
+				  <td class="ng-binding">fix dropdown issues</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">8/2/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">7</td>
+				  <td><a href="/deliverable/#!/tickets/7" class="ng-binding">Bug</a></td>
+				  <td class="ng-binding">None</td>
+				  <td class="ng-binding">TEST12TEST</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">6/21/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets --><tr ng-repeat="ticket in $ctrl.tickets" class="ng-scope">
+				  <td class="ng-binding">18</td>
+				  <td><a href="/deliverable/#!/tickets/18" class="ng-binding">Bug</a></td>
+				  <td class="ng-binding">None</td>
+				  <td class="ng-binding">TEST11TEST</td>
+				  <td class="ng-binding">Open</td>
+				  <td class="ng-binding">7/31/2017</td>
+				</tr><!-- end ngRepeat: ticket in $ctrl.tickets -->
+
+			</tbody>
+		</table>
+	</div>
+</div>
+</body>
+</html>
