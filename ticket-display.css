@@ -1,0 +1,16 @@
+.ticket-bug {
+	color: red;
+	font-size: 2em;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+.ticket-fieldname {
+	font-size: 1.5em;
+	color: #5e5e5e;
+	padding: 5px;
+	font-family: Helvetica;
+	margin: 2px 0 5px 0;
+}
+.editable-field {
+	margin-left: 5px;
+}
