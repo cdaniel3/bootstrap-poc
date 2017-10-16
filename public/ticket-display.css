@@ -14,3 +14,6 @@
 .editable-field {
 	margin-left: 5px;
 }
+a .glyphicon-edit {
+	color: inherit;
+}
